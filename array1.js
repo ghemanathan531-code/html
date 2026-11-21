@@ -1,0 +1,10 @@
+const arr1=new Array(1,4,5,89,"Hello");
+console.log(arr1);
+console.log(arr1[0]);
+console.log(arr1[1]);
+console.log(arr1[2]);
+console.log(arr1[3]);
+console.log(arr1[4]);
+console.log(arr1[1]=10);
+console.log(arr1[1]);
+console.log(arr1[8]);
