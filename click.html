@@ -1,0 +1,17 @@
+<html>
+<body id="myBody">
+    <button id="actionButton">Click Me!</button>
+    <p id="messageText">Waiting for your click..</p>
+    <script>
+        const button = document.getElementById("actionButton");
+        const textMessage = document.getElementById("messageText");
+        const body=document.getElementById("myBody");
+        function handleButtonClick(){
+            textMessage.textContent="Button was successfully clicked!";
+            body.style.backgroundColor="green";
+        }
+        button.addEventListener("click",handleButtonClick);
+        </script>
+        </body>
+        </html>
+        

@@ -1,0 +1,21 @@
+<html>
+<body>
+    <style>
+        .hightlight-border{
+            border:5px solid #ff6200;
+            border-radius:8px;
+        }
+        </style>
+        </head>
+        <body>
+            <img id="myImage" src="images.JPEG" height="200" width="200" alt="Sample Image">
+            <br>
+            <button id="bordenBtn">Toggle Border</button>
+        <script>
+            const btn=document.getElementById("borderBtn");
+            const img=document.getElementById("myImage");
+            btn.addEventListener("click",function(){
+                img.classList.toggle("hightlight-border");
+            });
+            </script>
+            </body>

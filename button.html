@@ -1,0 +1,25 @@
+<html>
+<body>
+    <button id="actionButton">Click Me!</button>
+    <button id="actionButton1">Click Me!</button>
+    <p id="messageText">Waiting for your click..</p>
+    <script>
+        const button = document.getElementById("actionButton");
+        const button1 = document.getElementById("actionButton1");
+        const textMessage = document.getElementById("messageText");
+        const textMessage1 = document.getElementById("messageText");
+        function handleButtonClick(){
+            textMessage.textContent="Button was successfully clicked!";
+            textMessage.style.color="green";
+        }
+       
+        function handleButtonClick1(){
+            textMessage.textContent="Button was successfully clicked!";
+            textMessage.style.color="red";
+        }
+        button.addEventListener("click",handleButtonClick);
+        button1.addEventListener("click",handleButtonClick1);
+        </script>
+        </body>
+        </html>
+        

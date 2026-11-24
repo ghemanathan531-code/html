@@ -1,8 +1,17 @@
-<!DOCTYPE>
 <html>
-<body>
-<h1>The src Attribute</h1>
-<p>HTML images are defined with the img tag,and the filename of the image source is specified in the src attribute:</p>
-<img src="images1.jpg" width="500" height="500" alt="Avengers">
-</body>
-</html>
+<body id="myBody">
+    <button id="actionButton">Click Me!</button>
+    <p id="messageText">Waiting for your click..</p>
+    <script>
+        const button = document.getElementById("actionButton");
+        const textMessage = document.getElementById("messageText");
+        const body=document.getElementById("myBody");
+        function handleButtonClick(){
+            textMessage.textContent="Button was successfully clicked!";
+            body.style.backgroundColor="green";
+        }
+        button.addEventListener("click",handleButtonClick);
+        </script>
+        </body>
+        </html>
+        
